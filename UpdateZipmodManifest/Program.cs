@@ -27,7 +27,7 @@ namespace UpdateZipmodManifest
         {
             try
             {
-                Console.WriteLine($@"UpateZipmodManifest
+                Console.WriteLine($@"<< zipmod game指定更新アプリ >>
 
 ※注意※
 バグや実行途中の中断などでzipmodファイルが使えなくなることがあります。
@@ -47,6 +47,7 @@ namespace UpdateZipmodManifest
    ※ゲーム指定が削除されるため、指定を元に戻すことができません
 
 実行したいオプションの数字を入力し、Enterキーを押して下さい。");
+                Console.Write("> ");
 
                 var selection = Console.ReadLine();
                 bool targetKK = false;
@@ -77,7 +78,7 @@ namespace UpdateZipmodManifest
                 }
 
 
-                Console.WriteLine("更新開始");
+                Console.WriteLine("更新開始...");
                 var filePaths = Directory.GetFiles(PATH, "*.zipmod", SearchOption.AllDirectories);
                 foreach (var path in filePaths)
                 {
