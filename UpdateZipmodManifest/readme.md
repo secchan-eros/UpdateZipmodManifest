@@ -1,8 +1,8 @@
-﻿# zipmod game名置換アプリ
+﻿# zipmod game指定更新アプリ
 
 ## 概要
 
-zipmodのmanifest.xmlで指定されている `game` を、 `Koikatsu` から `Koikatsu Sunshine` に置換します。
+zipmodのmanifest.xmlで指定されている `<game>` を更新し、コイカツ用のzipmodをコイカツサンシャインで使えるようにします。
 
 ## 必要環境
 
@@ -10,10 +10,9 @@ zipmodのmanifest.xmlで指定されている `game` を、 `Koikatsu` から `K
 
 ## 使用方法
 
-1. KoikatsuSunshineのインストールフォルダに UpdateZipmodManifest.exe を移動、もしくはコピーします。
-2. UpdateZipmodManifest.exe を実行します。
-3. 表示される置換対象フォルダのパスを確認し、Enterを押します。
-4. 置換完了後 UpdateZipmodManifest.exe を削除します。
+0. modsフォルダを別名でコピーしバックアップしてください。
+1. コイカツサンシャインのインストールフォルダに UpdateZipmodManifest.exe を移動、もしくはコピーし、実行します。
+2. 実行オプションを指定し実行して下さい。
 
 ## 免責事項
 
@@ -21,5 +20,9 @@ zipmodのmanifest.xmlで指定されている `game` を、 `Koikatsu` から `K
 
 ## 更新履歴
 
+### v0.1.0
+- 変更していないzipmodの更新日時が更新されてしまう点を解消しました
+- 実行オプションを増やし、 `<game>` を追加、削除できるようにしました。	
+
 ### v0.0.1
-とりあえずリリース
+- とりあえずリリース
